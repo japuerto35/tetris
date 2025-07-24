@@ -30,11 +30,6 @@ export function useTetrisGame() {
   const dropInterval = useRef<ReturnType<typeof setInterval> | null>(null);
   const dropSpeed = 500; // ms
 
-  // Inicializar nueva pieza
-  const spawnPiece = useCallback((tetrimino: Tetrimino) => {
-    setCurrent({ tetrimino, rotation: 0, pos: getInitialPosition(tetrimino.shape[0]) });
-  }, []);
-
   // Iniciar/reiniciar juego
   const startGame = useCallback(() => {
     setBoard(createEmptyBoard());
