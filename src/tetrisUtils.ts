@@ -1,5 +1,5 @@
 import { BOARD_WIDTH, BOARD_HEIGHT, TETRIMINOS } from './tetrisTypes';
-import type { Cell, Board, Tetrimino, Point } from './tetrisTypes';
+import type { Board, Tetrimino, Point } from './tetrisTypes';
 
 export function createEmptyBoard(): Board {
   return Array.from({ length: BOARD_HEIGHT }, () =>

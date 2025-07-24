@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { BOARD_WIDTH, BOARD_HEIGHT, TETRIMINOS } from './tetrisTypes';
-import type { Board, Cell, Tetrimino, Point } from './tetrisTypes';
+import { BOARD_WIDTH } from './tetrisTypes';
+import type { Board, Tetrimino, Point } from './tetrisTypes';
 import { createEmptyBoard, randomTetrimino, checkCollision, mergePiece, clearLines } from './tetrisUtils';
 
 export type GameState = 'playing' | 'paused' | 'gameover';
